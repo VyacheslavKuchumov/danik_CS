@@ -11,3 +11,7 @@ C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.
 C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.pdb
 C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.ceo_view.EmployeesView.resources
 C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.ceo_view.StoresView.resources
+C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.ceo_view.SalesView.resources
+C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.ceo_view.ProductsView.resources
+C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.ceo_view.SuppliersView.resources
+C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.ceo_view.ShipmentsView.resources

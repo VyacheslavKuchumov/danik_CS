@@ -58,11 +58,35 @@
     <Compile Include="ceo_view\EmployeesView.Designer.cs">
       <DependentUpon>EmployeesView.cs</DependentUpon>
     </Compile>
+    <Compile Include="ceo_view\ProductsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ceo_view\ProductsView.Designer.cs">
+      <DependentUpon>ProductsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ceo_view\SalesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ceo_view\SalesView.Designer.cs">
+      <DependentUpon>SalesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ceo_view\ShipmentsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ceo_view\ShipmentsView.Designer.cs">
+      <DependentUpon>ShipmentsView.cs</DependentUpon>
+    </Compile>
     <Compile Include="ceo_view\StoresView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ceo_view\StoresView.Designer.cs">
       <DependentUpon>StoresView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ceo_view\SuppliersView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ceo_view\SuppliersView.Designer.cs">
+      <DependentUpon>SuppliersView.cs</DependentUpon>
     </Compile>
     <Compile Include="danik_store_dbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -83,8 +107,20 @@
     <EmbeddedResource Include="ceo_view\EmployeesView.resx">
       <DependentUpon>EmployeesView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ceo_view\ProductsView.resx">
+      <DependentUpon>ProductsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ceo_view\SalesView.resx">
+      <DependentUpon>SalesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ceo_view\ShipmentsView.resx">
+      <DependentUpon>ShipmentsView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ceo_view\StoresView.resx">
       <DependentUpon>StoresView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ceo_view\SuppliersView.resx">
+      <DependentUpon>SuppliersView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

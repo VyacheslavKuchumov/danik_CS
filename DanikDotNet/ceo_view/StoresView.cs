@@ -33,5 +33,15 @@ namespace DanikDotNet.ceo_view
             this.storesTableAdapter.Fill(this.danik_store_dbDataSet.Stores);
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

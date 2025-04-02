@@ -10,15 +10,17 @@ using System.Windows.Forms;
 
 namespace DanikDotNet.ceo_view
 {
-    public partial class SalesView : Form
+    public partial class ProductsView : Form
     {
-        public SalesView()
+        public ProductsView()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void ProductsView_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'danik_store_dbDataSet.Products' table. You can move, or remove it, as needed.
+            this.productsTableAdapter.Fill(this.danik_store_dbDataSet.Products);
 
         }
 
@@ -30,20 +32,6 @@ namespace DanikDotNet.ceo_view
             form.Show();
             // Optionally, hide the current form
             this.Hide();
-        }
-
-        private void SalesView_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'danik_store_dbDataSet.Sales' table. You can move, or remove it, as needed.
-            this.salesTableAdapter.Fill(this.danik_store_dbDataSet.Sales);
-
-            
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

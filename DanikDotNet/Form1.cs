@@ -32,7 +32,7 @@ namespace DanikDotNet
 
         private void button8_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -49,6 +49,46 @@ namespace DanikDotNet
         {
             // Instantiate the second form
             StoresView form = new StoresView();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            // Instantiate the second form
+            SalesView form = new SalesView();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Instantiate the second form
+            ProductsView form = new ProductsView();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            // Instantiate the second form
+            SuppliersView form = new SuppliersView();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            // Instantiate the second form
+            ShipmentsView form = new ShipmentsView();
             // Show the second form
             form.Show();
             // Optionally, hide the current form
