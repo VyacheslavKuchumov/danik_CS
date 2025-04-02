@@ -1,0 +1,13 @@
+C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\bin\Debug\DanikDotNet.exe.config
+C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\bin\Debug\DanikDotNet.exe
+C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\bin\Debug\DanikDotNet.pdb
+C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.csproj.AssemblyReference.cache
+C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.ceo_view.CompanyView.resources
+C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.Form1.resources
+C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.Properties.Resources.resources
+C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.csproj.GenerateResource.cache
+C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.csproj.CoreCompileInputs.cache
+C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.exe
+C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.pdb
+C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.ceo_view.EmployeesView.resources
+C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.ceo_view.StoresView.resources
