@@ -45,5 +45,23 @@ namespace DanikDotNet.ceo_view
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Завершает редактирование в привязке данных
+            this.Validate();
+            this.salesBindingSource.EndEdit();
+
+            // Обновляет изменения в базе данных
+            try
+            {
+                this.salesTableAdapter.Update(this.danik_store_dbDataSet.Sales);
+                MessageBox.Show("Изменения успешно сохранены!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка при сохранении: " + ex.Message);
+            }
+        }
     }
 }

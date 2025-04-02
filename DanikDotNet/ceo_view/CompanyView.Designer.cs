@@ -29,46 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.companyBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.danikstoredbDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.danik_store_dbDataSet = new DanikDotNet.danik_store_dbDataSet();
-            this.companyTableAdapter = new DanikDotNet.danik_store_dbDataSetTableAdapters.CompanyTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
-            this.storesCompanyStoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.storesTableAdapter = new DanikDotNet.danik_store_dbDataSetTableAdapters.StoresTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.companyBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.danik_store_dbDataSet = new DanikDotNet.danik_store_dbDataSet();
+            this.companyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.companyTableAdapter = new DanikDotNet.danik_store_dbDataSetTableAdapters.CompanyTableAdapter();
             this.companyidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ceofullnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.companynameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.companyBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.danikstoredbDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.danik_store_dbDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.storesCompanyStoresBindingSource)).BeginInit();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.companyBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danik_store_dbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.companyBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // companyBindingSource
-            // 
-            this.companyBindingSource.DataMember = "Company";
-            this.companyBindingSource.DataSource = this.danikstoredbDataSetBindingSource;
-            // 
-            // danikstoredbDataSetBindingSource
-            // 
-            this.danikstoredbDataSetBindingSource.DataSource = this.danik_store_dbDataSet;
-            this.danikstoredbDataSetBindingSource.Position = 0;
-            // 
-            // danik_store_dbDataSet
-            // 
-            this.danik_store_dbDataSet.DataSetName = "danik_store_dbDataSet";
-            this.danik_store_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // companyTableAdapter
-            // 
-            this.companyTableAdapter.ClearBeforeFill = true;
             // 
             // button1
             // 
@@ -80,15 +55,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // storesCompanyStoresBindingSource
-            // 
-            this.storesCompanyStoresBindingSource.DataMember = "Stores$CompanyStores";
-            this.storesCompanyStoresBindingSource.DataSource = this.companyBindingSource;
-            // 
-            // storesTableAdapter
-            // 
-            this.storesTableAdapter.ClearBeforeFill = true;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
@@ -98,7 +64,7 @@
             this.ceofullnameDataGridViewTextBoxColumn,
             this.companynameDataGridViewTextBoxColumn,
             this.phoneDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.companyBindingSource1;
+            this.dataGridView1.DataSource = this.companyBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(63, 107);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
@@ -107,10 +73,30 @@
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
-            // companyBindingSource1
+            // label1
             // 
-            this.companyBindingSource1.DataMember = "Company";
-            this.companyBindingSource1.DataSource = this.danik_store_dbDataSet;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(322, 41);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(165, 37);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Компания";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // danik_store_dbDataSet
+            // 
+            this.danik_store_dbDataSet.DataSetName = "danik_store_dbDataSet";
+            this.danik_store_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // companyBindingSource
+            // 
+            this.companyBindingSource.DataMember = "Company";
+            this.companyBindingSource.DataSource = this.danik_store_dbDataSet;
+            // 
+            // companyTableAdapter
+            // 
+            this.companyTableAdapter.ClearBeforeFill = true;
             // 
             // companyidDataGridViewTextBoxColumn
             // 
@@ -145,53 +131,47 @@
             this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
             this.phoneDataGridViewTextBoxColumn.Width = 150;
             // 
-            // label1
+            // button2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(322, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 37);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Компания";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.button2.Location = new System.Drawing.Point(622, 41);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(120, 36);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Сохранить";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // CompanyView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Name = "CompanyView";
             this.Text = "CompanyView";
             this.Load += new System.EventHandler(this.CompanyView_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.companyBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.danikstoredbDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.danik_store_dbDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.storesCompanyStoresBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.companyBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danik_store_dbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.companyBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.BindingSource danikstoredbDataSetBindingSource;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label1;
         private danik_store_dbDataSet danik_store_dbDataSet;
         private System.Windows.Forms.BindingSource companyBindingSource;
         private danik_store_dbDataSetTableAdapters.CompanyTableAdapter companyTableAdapter;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.BindingSource storesCompanyStoresBindingSource;
-        private danik_store_dbDataSetTableAdapters.StoresTableAdapter storesTableAdapter;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn companyidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ceofullnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn companynameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource companyBindingSource1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
     }
 }

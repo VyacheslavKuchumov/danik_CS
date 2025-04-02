@@ -17,15 +17,10 @@ namespace DanikDotNet.ceo_view
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void CompanyView_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'danik_store_dbDataSet.Stores' table. You can move, or remove it, as needed.
-            this.storesTableAdapter.Fill(this.danik_store_dbDataSet.Stores);
+            
             // TODO: This line of code loads data into the 'danik_store_dbDataSet.Company' table. You can move, or remove it, as needed.
             this.companyTableAdapter.Fill(this.danik_store_dbDataSet.Company);
 
@@ -50,22 +45,23 @@ namespace DanikDotNet.ceo_view
         {
 
         }
-        private void dataGridView1_RowValidated(object sender, DataGridViewCellEventArgs e)
+
+        private void button2_Click(object sender, EventArgs e)
         {
-            // Применяем все текущие изменения, если они есть
+            // Завершает редактирование в привязке данных
             this.Validate();
             this.companyBindingSource.EndEdit();
 
+            // Обновляет изменения в базе данных
             try
             {
-                // Обновляем базу данных, передавая изменения из DataSet
                 this.companyTableAdapter.Update(this.danik_store_dbDataSet.Company);
+                MessageBox.Show("Изменения успешно сохранены!");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ошибка при сохранении изменений: " + ex.Message);
+                MessageBox.Show("Ошибка при сохранении: " + ex.Message);
             }
         }
-
     }
 }

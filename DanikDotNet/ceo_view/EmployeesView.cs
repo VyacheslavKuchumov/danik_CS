@@ -33,5 +33,23 @@ namespace DanikDotNet.ceo_view
             this.employeesTableAdapter.Fill(this.danik_store_dbDataSet.Employees);
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Завершает редактирование в привязке данных
+            this.Validate();
+            this.employeesBindingSource.EndEdit();
+
+            // Обновляет изменения в базе данных
+            try
+            {
+                this.employeesTableAdapter.Update(this.danik_store_dbDataSet.Employees);
+                MessageBox.Show("Изменения успешно сохранены!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка при сохранении: " + ex.Message);
+            }
+        }
     }
 }
