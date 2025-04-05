@@ -36,7 +36,6 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -113,28 +112,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(342, 48);
+            this.label1.Location = new System.Drawing.Point(261, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 37);
+            this.label1.Size = new System.Drawing.Size(268, 37);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Меню";
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(632, 382);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(126, 47);
-            this.button8.TabIndex = 8;
-            this.button8.Text = "Выйти";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.label1.Text = "Меню директора";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button8);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -160,7 +149,6 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button8;
     }
 }
 

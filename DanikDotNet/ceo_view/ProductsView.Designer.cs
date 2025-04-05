@@ -31,15 +31,15 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.productidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productdescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.costperunitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.danik_store_dbDataSet = new DanikDotNet.danik_store_dbDataSet();
             this.button1 = new System.Windows.Forms.Button();
             this.productsTableAdapter = new DanikDotNet.danik_store_dbDataSetTableAdapters.ProductsTableAdapter();
             this.button2 = new System.Windows.Forms.Button();
+            this.productidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productdescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.costperunitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.danik_store_dbDataSet)).BeginInit();
@@ -49,7 +49,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(337, 36);
+            this.label1.Location = new System.Drawing.Point(54, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(132, 37);
             this.label1.TabIndex = 6;
@@ -71,39 +71,6 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(679, 235);
             this.dataGridView1.TabIndex = 5;
-            // 
-            // productidDataGridViewTextBoxColumn
-            // 
-            this.productidDataGridViewTextBoxColumn.DataPropertyName = "product_id";
-            this.productidDataGridViewTextBoxColumn.HeaderText = "product_id";
-            this.productidDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.productidDataGridViewTextBoxColumn.Name = "productidDataGridViewTextBoxColumn";
-            this.productidDataGridViewTextBoxColumn.ReadOnly = true;
-            this.productidDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // productnameDataGridViewTextBoxColumn
-            // 
-            this.productnameDataGridViewTextBoxColumn.DataPropertyName = "product_name";
-            this.productnameDataGridViewTextBoxColumn.HeaderText = "product_name";
-            this.productnameDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.productnameDataGridViewTextBoxColumn.Name = "productnameDataGridViewTextBoxColumn";
-            this.productnameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // productdescriptionDataGridViewTextBoxColumn
-            // 
-            this.productdescriptionDataGridViewTextBoxColumn.DataPropertyName = "product_description";
-            this.productdescriptionDataGridViewTextBoxColumn.HeaderText = "product_description";
-            this.productdescriptionDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.productdescriptionDataGridViewTextBoxColumn.Name = "productdescriptionDataGridViewTextBoxColumn";
-            this.productdescriptionDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // costperunitDataGridViewTextBoxColumn
-            // 
-            this.costperunitDataGridViewTextBoxColumn.DataPropertyName = "cost_per_unit";
-            this.costperunitDataGridViewTextBoxColumn.HeaderText = "cost_per_unit";
-            this.costperunitDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.costperunitDataGridViewTextBoxColumn.Name = "costperunitDataGridViewTextBoxColumn";
-            this.costperunitDataGridViewTextBoxColumn.Width = 150;
             // 
             // productsBindingSource
             // 
@@ -139,6 +106,40 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // productidDataGridViewTextBoxColumn
+            // 
+            this.productidDataGridViewTextBoxColumn.DataPropertyName = "product_id";
+            this.productidDataGridViewTextBoxColumn.HeaderText = "product_id";
+            this.productidDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.productidDataGridViewTextBoxColumn.Name = "productidDataGridViewTextBoxColumn";
+            this.productidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.productidDataGridViewTextBoxColumn.Visible = false;
+            this.productidDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // productnameDataGridViewTextBoxColumn
+            // 
+            this.productnameDataGridViewTextBoxColumn.DataPropertyName = "product_name";
+            this.productnameDataGridViewTextBoxColumn.HeaderText = "Название товара";
+            this.productnameDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.productnameDataGridViewTextBoxColumn.Name = "productnameDataGridViewTextBoxColumn";
+            this.productnameDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // productdescriptionDataGridViewTextBoxColumn
+            // 
+            this.productdescriptionDataGridViewTextBoxColumn.DataPropertyName = "product_description";
+            this.productdescriptionDataGridViewTextBoxColumn.HeaderText = "Описание товара";
+            this.productdescriptionDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.productdescriptionDataGridViewTextBoxColumn.Name = "productdescriptionDataGridViewTextBoxColumn";
+            this.productdescriptionDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // costperunitDataGridViewTextBoxColumn
+            // 
+            this.costperunitDataGridViewTextBoxColumn.DataPropertyName = "cost_per_unit";
+            this.costperunitDataGridViewTextBoxColumn.HeaderText = "Стоимость за ед.";
+            this.costperunitDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.costperunitDataGridViewTextBoxColumn.Name = "costperunitDataGridViewTextBoxColumn";
+            this.costperunitDataGridViewTextBoxColumn.Width = 150;
+            // 
             // ProductsView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -167,10 +168,10 @@
         private danik_store_dbDataSet danik_store_dbDataSet;
         private System.Windows.Forms.BindingSource productsBindingSource;
         private danik_store_dbDataSetTableAdapters.ProductsTableAdapter productsTableAdapter;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridViewTextBoxColumn productidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productdescriptionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn costperunitDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button button2;
     }
 }

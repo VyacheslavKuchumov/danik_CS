@@ -31,18 +31,18 @@
             this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.danik_store_dbDataSet = new DanikDotNet.danik_store_dbDataSet();
             this.companyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.danik_store_dbDataSet = new DanikDotNet.danik_store_dbDataSet();
+            this.label1 = new System.Windows.Forms.Label();
             this.companyTableAdapter = new DanikDotNet.danik_store_dbDataSetTableAdapters.CompanyTableAdapter();
+            this.button2 = new System.Windows.Forms.Button();
             this.companyidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ceofullnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.companynameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.danik_store_dbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.companyBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danik_store_dbDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -73,63 +73,30 @@
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
-            // label1
+            // companyBindingSource
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(322, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 37);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Компания";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.companyBindingSource.DataMember = "Company";
+            this.companyBindingSource.DataSource = this.danik_store_dbDataSet;
             // 
             // danik_store_dbDataSet
             // 
             this.danik_store_dbDataSet.DataSetName = "danik_store_dbDataSet";
             this.danik_store_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // companyBindingSource
+            // label1
             // 
-            this.companyBindingSource.DataMember = "Company";
-            this.companyBindingSource.DataSource = this.danik_store_dbDataSet;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(56, 41);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(165, 37);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Компания";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // companyTableAdapter
             // 
             this.companyTableAdapter.ClearBeforeFill = true;
-            // 
-            // companyidDataGridViewTextBoxColumn
-            // 
-            this.companyidDataGridViewTextBoxColumn.DataPropertyName = "company_id";
-            this.companyidDataGridViewTextBoxColumn.HeaderText = "company_id";
-            this.companyidDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.companyidDataGridViewTextBoxColumn.Name = "companyidDataGridViewTextBoxColumn";
-            this.companyidDataGridViewTextBoxColumn.ReadOnly = true;
-            this.companyidDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // ceofullnameDataGridViewTextBoxColumn
-            // 
-            this.ceofullnameDataGridViewTextBoxColumn.DataPropertyName = "ceo_full_name";
-            this.ceofullnameDataGridViewTextBoxColumn.HeaderText = "ceo_full_name";
-            this.ceofullnameDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.ceofullnameDataGridViewTextBoxColumn.Name = "ceofullnameDataGridViewTextBoxColumn";
-            this.ceofullnameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // companynameDataGridViewTextBoxColumn
-            // 
-            this.companynameDataGridViewTextBoxColumn.DataPropertyName = "company_name";
-            this.companynameDataGridViewTextBoxColumn.HeaderText = "company_name";
-            this.companynameDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.companynameDataGridViewTextBoxColumn.Name = "companynameDataGridViewTextBoxColumn";
-            this.companynameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // phoneDataGridViewTextBoxColumn
-            // 
-            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "phone";
-            this.phoneDataGridViewTextBoxColumn.HeaderText = "phone";
-            this.phoneDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
-            this.phoneDataGridViewTextBoxColumn.Width = 150;
             // 
             // button2
             // 
@@ -140,6 +107,40 @@
             this.button2.Text = "Сохранить";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // companyidDataGridViewTextBoxColumn
+            // 
+            this.companyidDataGridViewTextBoxColumn.DataPropertyName = "company_id";
+            this.companyidDataGridViewTextBoxColumn.HeaderText = "company_id";
+            this.companyidDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.companyidDataGridViewTextBoxColumn.Name = "companyidDataGridViewTextBoxColumn";
+            this.companyidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.companyidDataGridViewTextBoxColumn.Visible = false;
+            this.companyidDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // ceofullnameDataGridViewTextBoxColumn
+            // 
+            this.ceofullnameDataGridViewTextBoxColumn.DataPropertyName = "ceo_full_name";
+            this.ceofullnameDataGridViewTextBoxColumn.HeaderText = "ФИО директора";
+            this.ceofullnameDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.ceofullnameDataGridViewTextBoxColumn.Name = "ceofullnameDataGridViewTextBoxColumn";
+            this.ceofullnameDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // companynameDataGridViewTextBoxColumn
+            // 
+            this.companynameDataGridViewTextBoxColumn.DataPropertyName = "company_name";
+            this.companynameDataGridViewTextBoxColumn.HeaderText = "Название компании";
+            this.companynameDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.companynameDataGridViewTextBoxColumn.Name = "companynameDataGridViewTextBoxColumn";
+            this.companynameDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // phoneDataGridViewTextBoxColumn
+            // 
+            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "phone";
+            this.phoneDataGridViewTextBoxColumn.HeaderText = "Контактный телефон";
+            this.phoneDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
+            this.phoneDataGridViewTextBoxColumn.Width = 150;
             // 
             // CompanyView
             // 
@@ -154,8 +155,8 @@
             this.Text = "CompanyView";
             this.Load += new System.EventHandler(this.CompanyView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.danik_store_dbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.companyBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danik_store_dbDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,10 +169,10 @@
         private danik_store_dbDataSet danik_store_dbDataSet;
         private System.Windows.Forms.BindingSource companyBindingSource;
         private danik_store_dbDataSetTableAdapters.CompanyTableAdapter companyTableAdapter;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridViewTextBoxColumn companyidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ceofullnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn companynameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button button2;
     }
 }

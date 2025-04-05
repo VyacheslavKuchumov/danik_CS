@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Word.15.0.4797.1004\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -64,11 +68,23 @@
     <Compile Include="ceo_view\ProductsView.Designer.cs">
       <DependentUpon>ProductsView.cs</DependentUpon>
     </Compile>
+    <Compile Include="ceo_view\SaleContentsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ceo_view\SaleContentsView.Designer.cs">
+      <DependentUpon>SaleContentsView.cs</DependentUpon>
+    </Compile>
     <Compile Include="ceo_view\SalesView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ceo_view\SalesView.Designer.cs">
       <DependentUpon>SalesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ceo_view\ShipmentContentsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ceo_view\ShipmentContentsView.Designer.cs">
+      <DependentUpon>ShipmentContentsView.cs</DependentUpon>
     </Compile>
     <Compile Include="ceo_view\ShipmentsView.cs">
       <SubType>Form</SubType>
@@ -99,6 +115,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ceo_view\CompanyView.resx">
@@ -110,8 +132,14 @@
     <EmbeddedResource Include="ceo_view\ProductsView.resx">
       <DependentUpon>ProductsView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ceo_view\SaleContentsView.resx">
+      <DependentUpon>SaleContentsView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ceo_view\SalesView.resx">
       <DependentUpon>SalesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ceo_view\ShipmentContentsView.resx">
+      <DependentUpon>ShipmentContentsView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ceo_view\ShipmentsView.resx">
       <DependentUpon>ShipmentsView.cs</DependentUpon>
@@ -124,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -145,6 +176,7 @@
     <None Include="danik_store_dbDataSet.xss">
       <DependentUpon>danik_store_dbDataSet.xsd</DependentUpon>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -157,6 +189,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="admin\" />
+    <Folder Include="worker\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -31,26 +31,32 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.saleidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.saledateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.storeidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.employeeidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.salesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.danik_store_dbDataSet = new DanikDotNet.danik_store_dbDataSet();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.salesTableAdapter = new DanikDotNet.danik_store_dbDataSetTableAdapters.SalesTableAdapter();
             this.button3 = new System.Windows.Forms.Button();
+            this.storesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.storesTableAdapter = new DanikDotNet.danik_store_dbDataSetTableAdapters.StoresTableAdapter();
+            this.employeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.employeesTableAdapter = new DanikDotNet.danik_store_dbDataSetTableAdapters.EmployeesTableAdapter();
+            this.saleidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.saledateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.storeidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.employeeidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.danik_store_dbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.storesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(329, 38);
+            this.label1.Location = new System.Drawing.Point(63, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(155, 37);
             this.label1.TabIndex = 12;
@@ -73,39 +79,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(679, 235);
             this.dataGridView1.TabIndex = 11;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // saleidDataGridViewTextBoxColumn
-            // 
-            this.saleidDataGridViewTextBoxColumn.DataPropertyName = "sale_id";
-            this.saleidDataGridViewTextBoxColumn.HeaderText = "sale_id";
-            this.saleidDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.saleidDataGridViewTextBoxColumn.Name = "saleidDataGridViewTextBoxColumn";
-            this.saleidDataGridViewTextBoxColumn.ReadOnly = true;
-            this.saleidDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // saledateDataGridViewTextBoxColumn
-            // 
-            this.saledateDataGridViewTextBoxColumn.DataPropertyName = "sale_date";
-            this.saledateDataGridViewTextBoxColumn.HeaderText = "sale_date";
-            this.saledateDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.saledateDataGridViewTextBoxColumn.Name = "saledateDataGridViewTextBoxColumn";
-            this.saledateDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // storeidDataGridViewTextBoxColumn
-            // 
-            this.storeidDataGridViewTextBoxColumn.DataPropertyName = "store_id";
-            this.storeidDataGridViewTextBoxColumn.HeaderText = "store_id";
-            this.storeidDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.storeidDataGridViewTextBoxColumn.Name = "storeidDataGridViewTextBoxColumn";
-            this.storeidDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // employeeidDataGridViewTextBoxColumn
-            // 
-            this.employeeidDataGridViewTextBoxColumn.DataPropertyName = "employee_id";
-            this.employeeidDataGridViewTextBoxColumn.HeaderText = "employee_id";
-            this.employeeidDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.employeeidDataGridViewTextBoxColumn.Name = "employeeidDataGridViewTextBoxColumn";
-            this.employeeidDataGridViewTextBoxColumn.Width = 150;
             // 
             // salesBindingSource
             // 
@@ -151,6 +124,67 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // storesBindingSource
+            // 
+            this.storesBindingSource.DataMember = "Stores";
+            this.storesBindingSource.DataSource = this.danik_store_dbDataSet;
+            // 
+            // storesTableAdapter
+            // 
+            this.storesTableAdapter.ClearBeforeFill = true;
+            // 
+            // employeesBindingSource
+            // 
+            this.employeesBindingSource.DataMember = "Employees";
+            this.employeesBindingSource.DataSource = this.danik_store_dbDataSet;
+            // 
+            // employeesTableAdapter
+            // 
+            this.employeesTableAdapter.ClearBeforeFill = true;
+            // 
+            // saleidDataGridViewTextBoxColumn
+            // 
+            this.saleidDataGridViewTextBoxColumn.DataPropertyName = "sale_id";
+            this.saleidDataGridViewTextBoxColumn.HeaderText = "Код продажи";
+            this.saleidDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.saleidDataGridViewTextBoxColumn.Name = "saleidDataGridViewTextBoxColumn";
+            this.saleidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.saleidDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // saledateDataGridViewTextBoxColumn
+            // 
+            this.saledateDataGridViewTextBoxColumn.DataPropertyName = "sale_date";
+            this.saledateDataGridViewTextBoxColumn.HeaderText = "Дата продажи";
+            this.saledateDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.saledateDataGridViewTextBoxColumn.Name = "saledateDataGridViewTextBoxColumn";
+            this.saledateDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // storeidDataGridViewTextBoxColumn
+            // 
+            this.storeidDataGridViewTextBoxColumn.DataPropertyName = "store_id";
+            this.storeidDataGridViewTextBoxColumn.DataSource = this.storesBindingSource;
+            this.storeidDataGridViewTextBoxColumn.DisplayMember = "store_name";
+            this.storeidDataGridViewTextBoxColumn.HeaderText = "Магазин";
+            this.storeidDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.storeidDataGridViewTextBoxColumn.Name = "storeidDataGridViewTextBoxColumn";
+            this.storeidDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.storeidDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.storeidDataGridViewTextBoxColumn.ValueMember = "store_id";
+            this.storeidDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // employeeidDataGridViewTextBoxColumn
+            // 
+            this.employeeidDataGridViewTextBoxColumn.DataPropertyName = "employee_id";
+            this.employeeidDataGridViewTextBoxColumn.DataSource = this.employeesBindingSource;
+            this.employeeidDataGridViewTextBoxColumn.DisplayMember = "full_name";
+            this.employeeidDataGridViewTextBoxColumn.HeaderText = "Продавец";
+            this.employeeidDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.employeeidDataGridViewTextBoxColumn.Name = "employeeidDataGridViewTextBoxColumn";
+            this.employeeidDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.employeeidDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.employeeidDataGridViewTextBoxColumn.ValueMember = "employee_id";
+            this.employeeidDataGridViewTextBoxColumn.Width = 150;
+            // 
             // SalesView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -167,6 +201,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.salesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.danik_store_dbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.storesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,10 +217,14 @@
         private danik_store_dbDataSet danik_store_dbDataSet;
         private System.Windows.Forms.BindingSource salesBindingSource;
         private danik_store_dbDataSetTableAdapters.SalesTableAdapter salesTableAdapter;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.BindingSource storesBindingSource;
+        private danik_store_dbDataSetTableAdapters.StoresTableAdapter storesTableAdapter;
+        private System.Windows.Forms.BindingSource employeesBindingSource;
+        private danik_store_dbDataSetTableAdapters.EmployeesTableAdapter employeesTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn saleidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn saledateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn storeidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn employeeidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridViewComboBoxColumn storeidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn employeeidDataGridViewTextBoxColumn;
     }
 }

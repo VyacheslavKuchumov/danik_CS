@@ -26,7 +26,7 @@ namespace DanikDotNet
             // Show the second form
             form.Show();
             // Optionally, hide the current form
-            // this.Hide();
+            this.Hide();
 
         }
 
@@ -42,7 +42,7 @@ namespace DanikDotNet
             // Show the second form
             form.Show();
             // Optionally, hide the current form
-            // this.Hide();
+            this.Hide();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace DanikDotNet
             // Show the second form
             form.Show();
             // Optionally, hide the current form
-            // this.Hide();
+            this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -62,7 +62,7 @@ namespace DanikDotNet
             // Show the second form
             form.Show();
             // Optionally, hide the current form
-            // this.Hide();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -72,7 +72,7 @@ namespace DanikDotNet
             // Show the second form
             form.Show();
             // Optionally, hide the current form
-            // this.Hide();
+            this.Hide();
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -82,7 +82,7 @@ namespace DanikDotNet
             // Show the second form
             form.Show();
             // Optionally, hide the current form
-            // this.Hide();
+            this.Hide();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -92,7 +92,12 @@ namespace DanikDotNet
             // Show the second form
             form.Show();
             // Optionally, hide the current form
-            // this.Hide();
+            this.Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

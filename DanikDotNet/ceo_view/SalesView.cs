@@ -19,7 +19,12 @@ namespace DanikDotNet.ceo_view
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            // Instantiate the second form
+            SaleContentsView form = new SaleContentsView();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -34,6 +39,10 @@ namespace DanikDotNet.ceo_view
 
         private void SalesView_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'danik_store_dbDataSet.Employees' table. You can move, or remove it, as needed.
+            this.employeesTableAdapter.Fill(this.danik_store_dbDataSet.Employees);
+            // TODO: This line of code loads data into the 'danik_store_dbDataSet.Stores' table. You can move, or remove it, as needed.
+            this.storesTableAdapter.Fill(this.danik_store_dbDataSet.Stores);
             // TODO: This line of code loads data into the 'danik_store_dbDataSet.Sales' table. You can move, or remove it, as needed.
             this.salesTableAdapter.Fill(this.danik_store_dbDataSet.Sales);
 

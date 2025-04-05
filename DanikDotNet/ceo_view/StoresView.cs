@@ -29,6 +29,8 @@ namespace DanikDotNet.ceo_view
 
         private void StoresView_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'danik_store_dbDataSet.Company' table. You can move, or remove it, as needed.
+            this.companyTableAdapter.Fill(this.danik_store_dbDataSet.Company);
             // TODO: This line of code loads data into the 'danik_store_dbDataSet.Stores' table. You can move, or remove it, as needed.
             this.storesTableAdapter.Fill(this.danik_store_dbDataSet.Stores);
 
