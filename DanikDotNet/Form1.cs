@@ -99,5 +99,35 @@ namespace DanikDotNet
         {
 
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            // Instantiate the second form
+            MainMenu form = new MainMenu();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            // Instantiate the second form
+            AnalyticsView form = new AnalyticsView();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            // Instantiate the second form
+            ReportsView form = new ReportsView();
+            // Show the second form
+            form.Show();
+            // Optionally, hide the current form
+            this.Hide();
+        }
     }
 }

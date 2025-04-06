@@ -37,28 +37,29 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(343, 317);
+            this.button8.Location = new System.Drawing.Point(330, 315);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(126, 47);
+            this.button8.Size = new System.Drawing.Size(158, 52);
             this.button8.TabIndex = 9;
-            this.button8.Text = "Выйти";
+            this.button8.Text = "Закрыть приложение";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(343, 238);
+            this.button1.Location = new System.Drawing.Point(330, 183);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 47);
+            this.button1.Size = new System.Drawing.Size(158, 47);
             this.button1.TabIndex = 10;
-            this.button1.Text = "Кладовщик";
+            this.button1.Text = "Администратор";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(343, 185);
+            this.button2.Location = new System.Drawing.Point(330, 236);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(126, 47);
+            this.button2.Size = new System.Drawing.Size(158, 47);
             this.button2.TabIndex = 11;
             this.button2.Text = "Продавец";
             this.button2.UseVisualStyleBackColor = true;
@@ -66,9 +67,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(343, 132);
+            this.button3.Location = new System.Drawing.Point(330, 130);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(126, 47);
+            this.button3.Size = new System.Drawing.Size(158, 47);
             this.button3.TabIndex = 12;
             this.button3.Text = "Директор";
             this.button3.UseVisualStyleBackColor = true;

@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ceo_view\AnalyticsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ceo_view\AnalyticsView.Designer.cs">
+      <DependentUpon>AnalyticsView.cs</DependentUpon>
+    </Compile>
     <Compile Include="ceo_view\CompanyView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,12 @@
     </Compile>
     <Compile Include="ceo_view\ProductsView.Designer.cs">
       <DependentUpon>ProductsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ceo_view\ReportsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ceo_view\ReportsView.Designer.cs">
+      <DependentUpon>ReportsView.cs</DependentUpon>
     </Compile>
     <Compile Include="ceo_view\SaleContentsView.cs">
       <SubType>Form</SubType>
@@ -123,6 +135,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="seller\SellerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seller\SellerMenu.Designer.cs">
+      <DependentUpon>SellerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\AdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\AdminMenu.Designer.cs">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ceo_view\AnalyticsView.resx">
+      <DependentUpon>AnalyticsView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ceo_view\CompanyView.resx">
       <DependentUpon>CompanyView.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ceo_view\ProductsView.resx">
       <DependentUpon>ProductsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ceo_view\ReportsView.resx">
+      <DependentUpon>ReportsView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ceo_view\SaleContentsView.resx">
       <DependentUpon>SaleContentsView.cs</DependentUpon>
@@ -165,6 +195,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="seller\SellerMenu.resx">
+      <DependentUpon>SellerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\AdminMenu.resx">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="danik_store_dbDataSet.xsc">
       <DependentUpon>danik_store_dbDataSet.xsd</DependentUpon>
     </None>
@@ -190,9 +226,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="admin\" />
-    <Folder Include="worker\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -18,3 +18,7 @@ C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.
 C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.ceo_view.SaleContentsView.resources
 C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.ceo_view.ShipmentContentsView.resources
 C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.MainMenu.resources
+C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.ceo_view.AnalyticsView.resources
+C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.ceo_view.ReportsView.resources
+C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.seller.SellerMenu.resources
+C:\Users\Vyacheslav\Documents\GitHub\danik_CS\DanikDotNet\obj\Debug\DanikDotNet.warehouse_worker.AdminMenu.resources
